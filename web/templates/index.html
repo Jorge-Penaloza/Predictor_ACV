@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modelo de predicción EEERR</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+</head>
+<body>
+    <h1>Modelo de predicción</h1>
+    <form method="POST" action="/predict">
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+            <option value="0">0-Male</option>
+            <option value="1">1-Female</option>
+            <option value="2">2-Other</option>
+        </select><br>
+
+        <label for="age">Age:</label>
+        <input type="text" name="age" id="age"><br>
+
+        <label for="hypertension">Hypertension:</label>
+        <input type="text" name="hypertension" id="hypertension"><br>
+
+        <label for="heart_disease">Heart Disease:</label>
+        <select name="heart_disease" id="heart_disease">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select><br>
+
+        <label for="ever_married">Ever Married:</label>
+        <select name="ever_married" id="ever_married">
+            <option value="0">0-No</option>
+            <option value="1">1-Yes</option>
+        </select><br>
+
+        <label for="work_type">Work Type:</label>
+        <select name="work_type" id="work_type">
+            <option value="0">0-Never_worked</option>
+            <option value="1">1-children</option>
+            <option value="2">2-Govt_job</option>
+            <option value="3">3-Private</option>
+            <option value="4">4-Self-employed</option>
+        </select><br>
+
+        <label for="residence_type">Residence Type:</label>
+        <select name="residence_type" id="residence_type">
+            <option value="0">0-Urban</option>
+            <option value="1">1-Rural</option>
+        </select><br>
+
+        <label for="avg_glucose_level">Avg Glucose Level:</label>
+        <input type="text" name="avg_glucose_level" id="avg_glucose_level"><br>
+
+        <label for="bmi">BMI:</label>
+        <input type="text" name="bmi" id="bmi"><br>
+
+        <label for="smoking_status">Smoking Status:</label>
+        <select name="smoking_status" id="smoking_status">
+            <option value="0">0-never smoked</option>
+            <option value="1">1-smokes</option>
+            <option value="2">2-unknowns</option>
+            <option value="3">3-formerly smoked</option>
+        </select><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
